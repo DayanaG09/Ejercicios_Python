@@ -75,7 +75,7 @@ class Interfaz:
             self.controlador.crearArchivo()
             msj=self.controlador.deserializar(nombre_archivo)
             messagebox.showinfo("¡Perfecto!", f"Su archivo se ha creado con éxito\nContenido: {msj}")
-            messagebox.showinfo("¡Perfecto!", "Su archivo se ha creado con éxito")
+            
         except ValueError:
             messagebox.showerror("Error", "Por favor rellena todos los campos")
     
